@@ -1,6 +1,6 @@
 body
 {
-    background: linear-gradient(#2766ad, #ffbaba, #746161);
+    background-color: rgb(219, 219, 219);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -11,15 +11,13 @@ p
 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 3px 3px #2e2e2e;
+    font-size: 18px;
 }
 
 h1
 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 3px 3px #2e2e2e;
-    text-align: center;
     font-size: 50px;
 }
 
@@ -27,7 +25,6 @@ h2
 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 3px 3px #2e2e2e;
     font-size: 30px;
 }
 
@@ -35,7 +32,16 @@ h3
 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 3px 3px #2e2e2e;
+}
+
+code
+{
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
 }
 
 a:link 
@@ -69,11 +75,20 @@ a:hover
     padding-left: 40px;
     padding-right: 40px;
     background-color: #292727;
+    border-radius: 25px;
 }
 
-.center {
+.center 
+{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-  }
+}
+
+.center-video 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

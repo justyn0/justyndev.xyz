@@ -41,13 +41,13 @@ import '../../styles/global.css';
 
 				<p>With closer inspection, it seems the <code>pda_aimmatrix_crouch_idle</code> animation is actually an early version of the spy’s knife aim matrix animation. Here’s both aim matrices side by side.</p>
 
-				<video src="/blog/spycrab/knife_aimmatrix.webm" autoplay loop controls class="center" width="80%" height="500"></video>
+				<video src="/blog/spycrab/knife_aimmatrix.webm" autoplay loop controls class="center" width="80%" ></video>
 
 				<h2>The Fix</h2>
 
 				<p>Now knowing that the bug is created by accidentally exporting another aim matrix animation for the wrong weapon. The fix is actually pretty simple! Without touching the animation files itself. We can go into the <code>spy_movement.qci</code> and replace any mention of <code>pda_aimmatrix_crouch_idle</code> with <code>pda_aimmatrix_idle</code> and that’s it! Compiling <code>spy_animations.qc</code> and loading up TF2 we will see the Spycrab no longer works.</p>
 
-				<video src="/blog/spycrab/pda_fix.webm" autoplay loop muted controls class="center" width="80%" height="500"></video>
+				<video src="/blog/spycrab/pda_fix.webm" autoplay loop muted controls class="center" width="80%" ></video>
 
 				<h2>But should this bug really be fixed?</h2>
 

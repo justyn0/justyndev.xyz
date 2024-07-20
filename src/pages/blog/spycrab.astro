@@ -5,16 +5,16 @@ import '../../styles/global.css';
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image" href="https://pbs.twimg.com/profile_images/1462927520022646787/_0T21GXE_400x400.jpg" />
-		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image" href="/icon.jpg" />
+		<meta name="viewport" content="width=device-width", initial-scale="1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>The Spycrab. Why does it exist?</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="content">
+		<div class="blog">
+			<div class="blog-post">
 				<h1>The Spycrab. Why does it exist?</h1>
-				<h3>Date: April 21, 2024</h3>
+				<h3>April 21, 2024</h3>
 				<p>A Spycrab is an iconic animation bug for the Spy from Team Fortress 2. This bug was introduced since the game’s launch in 2007 and still exists today! </p>
 
 				<iframe width="50%" height="315" class="center" src="https://www.youtube.com/embed/3dyQlZziHnw?si=Dws9KvJRA4JM5VmH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -41,13 +41,13 @@ import '../../styles/global.css';
 
 				<p>With closer inspection, it seems the <code>pda_aimmatrix_crouch_idle</code> animation is actually an early version of the spy’s knife aim matrix animation. Here’s both aim matrices side by side.</p>
 
-				<video src="/blog/spycrab/knife_aimmatrix.webm" autoplay loop class="center" width="80%"></video>
+				<video src="/blog/spycrab/knife_aimmatrix.webm" autoplay loop controls class="center" width="80%" height="500"></video>
 
 				<h2>The Fix</h2>
 
 				<p>Now knowing that the bug is created by accidentally exporting another aim matrix animation for the wrong weapon. The fix is actually pretty simple! Without touching the animation files itself. We can go into the <code>spy_movement.qci</code> and replace any mention of <code>pda_aimmatrix_crouch_idle</code> with <code>pda_aimmatrix_idle</code> and that’s it! Compiling <code>spy_animations.qc</code> and loading up TF2 we will see the Spycrab no longer works.</p>
 
-				<video src="/blog/spycrab/pda_fix.webm" autoplay loop muted  class="center" width="80%"></video>
+				<video src="/blog/spycrab/pda_fix.webm" autoplay loop muted controls class="center" width="80%" height="500"></video>
 
 				<h2>But should this bug really be fixed?</h2>
 

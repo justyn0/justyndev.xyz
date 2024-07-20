@@ -102,8 +102,26 @@ a:hover
     margin-right: auto;
 }
 
-@media (max-width: 600px)
+@media only screen and (max-width: 600px)
 {
+    .container
+    {
+        margin: 5%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .container .content
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #292727;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
     .blog
     {
         margin: 0%;
@@ -117,5 +135,50 @@ a:hover
         padding-left: 20px;
         padding-right: 20px;
         border-radius: 0px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1180px)
+{
+    .container
+    {
+        margin: 5%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .container .content
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #292727;
+        border-radius: 15px;
+        margin: 20px;
+    }
+
+    .blog
+    {
+        margin: 1%;
+        margin-right: 5%;
+        margin-left: 5%;   
+    }
+    .blog .blog-post
+    {
+    }
+}
+
+
+@media only screen and (min-width: 1180px) and (max-width: 1500px)
+{
+    .blog
+    {
+        margin: 1%;
+        margin-right: 10%;
+        margin-left: 10%;   
+    }
+    .blog .blog-post
+    {
     }
 }

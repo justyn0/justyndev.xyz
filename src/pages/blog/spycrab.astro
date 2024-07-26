@@ -14,14 +14,14 @@ import '../../styles/global.css';
 		<div class="blog">
 			<div class="blog-post">
 				<h1>The Spycrab. Why does it exist?</h1>
-				<h3>April 21, 2024</h3>
+				<h2>April 21, 2024</h2>
 				<p>A Spycrab is an iconic animation bug for the Spy from Team Fortress 2. This bug was introduced since the game’s launch in 2007 and still exists today! </p>
 
 				<iframe width="50%" height="315" class="center" src="https://www.youtube.com/embed/3dyQlZziHnw?si=Dws9KvJRA4JM5VmH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 				<p>This post will cover on what causes this bug happen, how to fix it, and why it SHOULDN’T be fixed.</p>
 
-				<h2>Debugging the Spycrab</h2>
+				<h3>Debugging the Spycrab</h3>
 
 				<p>First we need to know how do you become a Spycrab in TF2. To become a Spycrab the player have to pull out the disguise kit, crouch, look up, then start moving in any direction.</p>
 
@@ -43,13 +43,13 @@ import '../../styles/global.css';
 
 				<video src="/blog/spycrab/knife_aimmatrix.webm" autoplay loop class="center" width="80%" ></video>
 
-				<h2>The Fix</h2>
+				<h3>The Fix</h3>
 
 				<p>Now knowing that the bug is created by accidentally exporting another aim matrix animation for the wrong weapon. The fix is actually pretty simple! Without touching the animation files itself. We can go into the <code>spy_movement.qci</code> and replace any mention of <code>pda_aimmatrix_crouch_idle</code> with <code>pda_aimmatrix_idle</code> and that’s it! Compiling <code>spy_animations.qc</code> and loading up TF2 we will see the Spycrab no longer works.</p>
 
 				<video src="/blog/spycrab/pda_fix.webm" autoplay loop muted class="center" width="80%" ></video>
 
-				<h2>But should this bug really be fixed?</h2>
+				<h3>But should this bug really be fixed?</h3>
 
 				<p>This is the part where I tell you that the Spycrab bug should never be fixed in TF2. Even though this bug was stemmed from a mistake and it’s pretty simple to fix. This bug should never be fixed purely because it’s very important for the game’s history and community. After this bug was discovered and popularized back in 2008. It spawns plenty of memes within the community and in-game references from community cosmetics and unusuals, an official rare taunt for the disguise kit, warpaints, and a poster from the map Carnival of Carnage a Halloween reskin of Doomsday.</p>
 

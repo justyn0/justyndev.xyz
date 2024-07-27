@@ -79,7 +79,6 @@ a:visited
 a:hover 
 {
     color: var(--text);
-    text-decoration: underline;
 }
 
 

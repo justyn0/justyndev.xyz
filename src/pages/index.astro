@@ -1,5 +1,5 @@
 ---
-import '../styles/temp.css';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -9,22 +9,26 @@ import '../styles/temp.css';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Justyn</title>
-		<style>
-			h2 {text-align: center;}
-		</style>
 	</head>
 	<body>
+		<header>
+			<nav>
+			   <a href="/">Home</a>
+			   <a href="/blog">Blog</a>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="home">
+				<h1>Hello!</h1>
+				<p>Welcome to my website!</p>
 
-		<h1>This site is under construction!</h1>
-		
-		<h2>
-		<p>Come back when this site is done!</p>
-		
-		<a href="https://ko-fi.com/justyn1">Ko-fi</a>
-		<a href="https://x.com/justyn1_">Twitter/X</a>
-		<a href="https://www.tumblr.com/justyn1">Tumblr</a>
-		<a href="https://www.artstation.com/justyn8">Artstation</a>
-		</h2>
-		
+				<p>If you wish to contact me privately. It's best to contact me through E-Mail or Discord since I don't check social media often.</p>
+
+<pre>
+Email: contactjustyn@gmail.com
+Discord: justyn0
+</pre>
+			</div>
+		</div>
 		</body>
 </html>

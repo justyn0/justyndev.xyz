@@ -1,34 +1,11 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home Page";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image" href="/icon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Justyn</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-			   <a href="/">Home</a>
-			   <a href="/blog">Blog</a>
-			</nav>
-		</header>
-		<div class="container">
-			<div class="home">
-				<h1>Hello!</h1>
-				<p>Welcome to my website!</p>
-
-				<p>If you wish to contact me privately. It's best to contact me through E-Mail or Discord since I don't check social media often.</p>
-
-<pre>
-Email: contactjustyn@gmail.com
-Discord: justyn0
-</pre>
-			</div>
-		</div>
-		</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<div class="home">    
+		<h1>Hello!</h1>
+		<p>Welcome to my website!</p>
+	</div>
+</BaseLayout>

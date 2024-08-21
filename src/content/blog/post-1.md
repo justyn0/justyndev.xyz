@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Awesome Pack Pistol
 pubDate: April 19, 2023
 description: A short post showing off the process of creating the diffuse texture for the Awesome Pack's Pistol. Originally a Twitter thread
+heroImage: '/blog/pistol/hero.png'
 ---
 
 I like to go a little bit in-depth on the high res Pistol I made for the TF2 Awesome Pack back in February. This mostly goes a little in-depth with the texture techniques I used while making this.

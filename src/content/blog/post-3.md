@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: The Spycrab. Why does it exist?
 pubDate: April 21, 2024
 description: Originally a Tumblr post

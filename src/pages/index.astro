@@ -1,11 +1,20 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+const SITE_TITLE = "Home Page";
+const SITE_DESCRIPTION = "Home Page";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<div class="home">    
-		<h1>Hello!</h1>
-		<p>Welcome to my website!</p>
-	</div>
-</BaseLayout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<BaseLayout>
+		<div class="home">    
+			<h1>Hello!</h1>
+			<p>Welcome to my website!</p>
+		</div>
+	</BaseLayout>
+	</body>
+</html>

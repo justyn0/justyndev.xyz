@@ -1,8 +1,8 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: When is the next release of the TF2 Awesome Pack?
 pubDate: August 31, 2023
 description: Originally a Tumblr post
+heroImage: '/blog/awesome-pack-release-2023/heavy_and_spy.png'
 ---
 <img src="/blog/awesome-pack-release-2023/heavy_and_spy.png" width="80%" class="center" alt="">
 

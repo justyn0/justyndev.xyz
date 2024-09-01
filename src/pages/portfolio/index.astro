@@ -22,12 +22,13 @@ const posts = (await getCollection('portfolio')).sort(
 				posts.map((post) => (
 			
 			
+							
+						<a href={`/portfolio/${post.slug}/`}>
 							<div class="thumbnail">
-								<a href={`/blog/${post.slug}/`}>
-									<img width={400} height={400} src={post.data.heroImage} alt="" />
-									<div class="thumbnail-title">{post.data.title}</div>
-								</a>
+								<img width={400} height={400} src={post.data.heroImage} alt="" />
+								<div class="thumbnail-title">{post.data.title}</div>
 							</div>
+						</a>
 				))
 			}
 		</div>

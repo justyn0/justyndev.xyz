@@ -253,20 +253,7 @@ a:hover
     padding-top: 100%; /* Makes the height equal to the width, keeping it square */
     position: relative; /* Contain absolutely positioned elements */
   }
-  
-  .thumbnail {
-    border-radius: 0.2em;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.3s;
-    background-color: #1e1e1e;
-    width: 100%; /* Full width of grid item */
-    padding-top: 100%; /* Makes the height equal to the width, keeping it square */
-    position: relative; /* Contain absolutely positioned elements */
-  }
-  
+
   .thumbnail img {
     position: absolute;
     top: 0;

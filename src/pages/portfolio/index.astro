@@ -5,8 +5,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
-const posts = (await getCollection('portfolio')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+const posts = (await getCollection('portfolio'))
+	.filter((post) => !post.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
@@ -17,21 +18,19 @@ const posts = (await getCollection('portfolio')).sort(
 	</head>
 	<body>
 		<BaseLayout>
-			<p>portfolio</p>
-			<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
-			{
-				posts.map((post) => (
-			
-			
-							
-						<a href={`/portfolio/${post.slug}/`}>
-							<div class="thumbnail">
-								<img width={400} height={400} src={post.data.heroImage} alt="" />
-								<div class="thumbnail-title">{post.data.title}</div>
-							</div>
-						</a>
-				))
-			}
+			<div class="portfolio-container">
+				<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+				{
+					posts.map((post) => (
+							<a href={`/portfolio/${post.slug}/`}>
+								<div class="thumbnail">
+									<img width={400} height={400} src={post.data.heroImage} alt="" />
+									<div class="thumbnail-title">{post.data.title}</div>
+								</div>
+							</a>
+					))
+				}
+			</div>
 		</div>
 		</BaseLayout>
 	</body>

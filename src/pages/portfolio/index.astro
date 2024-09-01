@@ -5,7 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('portfolio')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -17,17 +17,17 @@ const posts = (await getCollection('blog')).sort(
 	</head>
 	<body>
 		<BaseLayout>
-		<div class="container">
+			<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
 			{
 				posts.map((post) => (
-						<a href={`/blog/${post.slug}/`}>
-							<div class="content">
-								<img width="100%" height="auto" src={post.data.heroImage} alt="" />
-								<h1 class="title">{post.data.title}</h1>
-								<p class="date"> Published on <FormattedDate date={post.data.pubDate} /></p>
-								<p>{post.data.description}</p>
+			
+			
+							<div class="thumbnail">
+								<a href={`/blog/${post.slug}/`}>
+									<img width={400} height={400} src={post.data.heroImage} alt="" />
+									<div class="thumbnail-title">{post.data.title}</div>
+								</a>
 							</div>
-						</a>
 				))
 			}
 		</div>

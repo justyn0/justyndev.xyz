@@ -23,7 +23,7 @@ const posts = (await getCollection('blog'))
 				posts.map((post) => (
 						<a href={`/blog/${post.slug}/`}>
 							<div class="content">
-								<h1 class="title">{post.data.title}</h1>
+								<h2 class="title">{post.data.title}</h2>
 								<p class="date"> Published on <FormattedDate date={post.data.pubDate} /></p>
 								<p>{post.data.description}</p>
 							</div>

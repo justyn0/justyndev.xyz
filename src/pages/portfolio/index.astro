@@ -18,7 +18,7 @@ const posts = (await getCollection('portfolio'))
 	<body>
 		<BaseLayout>
 			<div class="portfolio-container">
-				<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+				<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
 				{
 					posts.map((post) => (
 							<a href={`/portfolio/${post.slug}/`}>

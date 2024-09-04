@@ -16,10 +16,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 	<body>
 		<Navigation />
-		<div class="blog">
-			<div class="blog-post">
-				<h1 class="title" >{title}</h1>
-					<div class="date">
+		<div class="post">
+			<div class="portfolio-post">
+				<h1 class="title" style="text-align: center" >{title}</h1>
+					<div class="date" style="text-align: center">
 						Published on <FormattedDate date={pubDate} />
 						{
 							updatedDate && (

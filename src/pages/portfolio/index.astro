@@ -18,6 +18,9 @@ const posts = (await getCollection('portfolio'))
 	<body>
 		<BaseLayout>
 			<div class="portfolio-container">
+				<div style="">
+					<h1 style="font-weight: lighter; font-size: 2.8em;">Portfolio</h1>
+				</div>
 				<div class="thumbnail-container" id="thumbnail-container" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
 				{
 					posts.map((post) => (

@@ -27,10 +27,9 @@ html
 body
 {
     background-color: #ffffff;
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size:100% auto;
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 code
@@ -60,7 +59,8 @@ header
 header a
 {
     display: inline-block;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
     font-size: 1.5em;
     transition: 0.3s;
@@ -84,6 +84,15 @@ footer
     background-color: white;
 }
 
+.footer-container
+{
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 footer a
 {
     transition: 0.3s;
@@ -94,23 +103,26 @@ footer a:hover
     color: var(--text-hover);
 }
 
-* {
+* 
+{
     box-sizing: border-box;
-  }
+}
   
-  /* Create two equal columns that floats next to each other */
-  .column {
+/* Create two equal columns that floats next to each other */
+.column 
+{
     float: left;
     width: 50%;
     padding: 10px;
 }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 a:link 
 {
@@ -152,12 +164,13 @@ a:hover
     margin: 10px;
     padding: 20px;
     background-color: var(--blog-background);
-    border-radius: 20px;
     transition: 0.3s;
     font-size: 1em;
     border-style: solid;
     border-color: var(--border);
     border-width: 1px;
+    border-left: 0px;
+    border-right: 0px;
 }
 
 .container .home
@@ -209,11 +222,6 @@ a:hover
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--blog-background);
-    border-color: var(--border);
-    border-width: 1px;
-    border-style: solid;
-    border-top: 0px;
-    border-bottom: 0px;
 }
 
 .post .portfolio-post
@@ -223,11 +231,6 @@ a:hover
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--blog-background);
-    border-color: var(--border);
-    border-width: 1px;
-    border-style: solid;
-    border-top: 0px;
-    border-bottom: 0px;
 }
 
 .post a:link 
@@ -257,7 +260,7 @@ a:hover
     margin-bottom: 5px;
 }
 
-/* Taken from https://github.com/artofpilgrim/portfolio-template. I couldn't be bothered to make this on my own */
+/* Thumbnail entires was taken from https://github.com/artofpilgrim/portfolio-template. I couldn't be bothered to make this on my own */
 
 #thumbnail-container {
     display: grid;
@@ -331,51 +334,3 @@ a:hover
     background-color:rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
-
-/*
-@media only screen and (max-width: 600px)
-{
-    .container
-    {
-        margin: 5%;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-    .blog
-    {
-        margin: 0%;
-        margin-right: 0%;
-        margin-left: 0%;   
-    }
-    .blog .blog-post
-    {
-
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1180px)
-{
-    .container
-    {
-        margin: 5%;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-    .blog
-    {
-        margin-right: 5%;
-        margin-left: 5%;   
-    }
-}
-
-
-@media only screen and (min-width: 1180px) and (max-width: 1500px)
-{
-    .blog
-    {
-        margin-right: 10%;
-        margin-left: 10%;   
-    }
-}
-
-*/

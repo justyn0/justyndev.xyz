@@ -1,41 +1,87 @@
 :root 
 {
-    --text: #e6e6e6;
-    --blog-background: #726c6c93;
-    --blog-background-hover: #ce878793;
+    --text: #3f3f3f;
+    --text-hover: #121212;
+    --text-hover-white: #ffffff;
+    --date: #b3b3b3;
+    --blog-background: #ffffff;
+    --blog-background-hover: #272727;
+    --header-background: #3f3c3a;
+    --header-background-hover: #ce878793;
+    --border: #d3d3d3;
 }
 
 html
 {
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-family: "Urbanist", sans-serif;
     color: var(--text);
 }
 
-h2
+.date
 {
-    color: #a7a7a7;
     font-size: 0.9em;
 }
 
 body
 {
-    background: url(/backgrounds/background.png);
-    background-color: #1f1828;
-    height: 100%;
-    margin: 0;
-    background-repeat: repeat-x;
+    background-color: #ffffff;
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h6
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 code
 {
-    background-color: #1f1f1f;
+    background-color: #24292e;
     color: white;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 2px;
+}
+
+.astro-code.github-dark
+{
+    padding: 10px;
 }
 
 header 
@@ -43,29 +89,85 @@ header
     padding: 10px;
     text-align: center;
     margin: 0%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: var(--border);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
 }
 header a
 {
     display: inline-block;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
-    border-radius: 10px;
-    background-color: var(--blog-background);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.337);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     font-size: 1.5em;
-    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
 }
 header a:hover
 {
-    background-color: var(--blog-background-hover);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    color: var(--text-hover);
 }
 
-footer
+footer 
 {
-
+    padding: 0em 1em 6em 1em;
+    text-align: center;
+    border-style: solid;
+    border-color: var(--border);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: 1px;
+    background-color: white;
 }
+
+.footer-container
+{
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+footer a
+{
+    transition: 0.3s;
+}
+footer a:hover
+{
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    color: var(--text-hover);
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+  
+/* Create two equal columns that floats next to each other */
+.column 
+{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 a:link 
 {
     color: var(--text);
@@ -81,62 +183,121 @@ a:hover
     color: var(--text);
 }
 
-
-
 .container
 {
-    margin-right: 20%;
-    margin-left: 20%;
+    max-width: 58rem;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.portfolio-container
+{
+    max-width: 70rem;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .container .content
 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 20px;
-    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
     background-color: var(--blog-background);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.337);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    transition: 0.3s;
+    font-size: 1em;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 1px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.home
+{
+    margin: 10px;
+    padding: 20px;
 }
 
 .container .content:hover
 {
     background-color: var(--blog-background-hover);
+    color: var(--text-hover-white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-color: var(--blog-background-hover);
 }
 
-.container .hero-image
+.home a:link 
 {
-    float: right;
-    margin-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-style: solid;
-    border-color: rgb(141, 116, 49);
-    border-width: 2px;
+    color: var(--text);
+    text-decoration: underline;
+    transition: 0.3s;
 }
-
-.blog
+.home a:hover 
 {
-    margin: 1%;
-    margin-right: 20%;
-    margin-left: 20%;
+    color: var(--text-hover);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.blog .blog-post
+.post
+{
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post .blog-post
 {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--blog-background);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.377);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
+}
+
+.post .portfolio-post
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--blog-background);
+}
+
+.post a:link 
+{
+    color: var(--text);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.post a:hover 
+{
+    color: var(--text-hover);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.post .portfolio-post video
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.post .portfolio-post img
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .center 
@@ -146,47 +307,82 @@ a:hover
     margin-right: auto;
 }
 
-@media only screen and (max-width: 600px)
+.title
 {
-    .container
-    {
-        margin: 5%;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-    .blog
-    {
-        margin: 0%;
-        margin-right: 0%;
-        margin-left: 0%;   
-    }
-    .blog .blog-post
-    {
-
-    }
+    margin-bottom: 5px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1180px)
-{
-    .container
-    {
-        margin: 5%;
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-    .blog
-    {
-        margin-right: 5%;
-        margin-left: 5%;   
-    }
-}
+/* Thumbnail entires was taken from https://github.com/artofpilgrim/portfolio-template. I couldn't be bothered to make this on my own */
 
-
-@media only screen and (min-width: 1180px) and (max-width: 1500px)
-{
-    .blog
-    {
-        margin-right: 10%;
-        margin-left: 10%;   
+#thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ensure items fill the space */
+    gap: 10px; /* Consistent gap between items */
+    box-sizing: border-box;
+    width: 100%; /* Ensure it spans the full width */
+    align-content: start; /* Ensure consistent vertical gaps */
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-30px);
+      opacity: 0;
     }
-}
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .thumbnail {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+    background-color: #1e1e1e;
+    width: 100%; /* Full width of grid item */
+    padding-top: 100%; /* Makes the height equal to the width, keeping it square */
+    position: relative; /* Contain absolutely positioned elements */
+  }
+
+  .thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .thumbnail-title {
+    position: absolute;
+    top: 43%;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+  }
+  
+  .thumbnail:hover .thumbnail-title {
+    opacity: 1;
+  }
+  
+  .thumbnail:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 1s;
+    background-color:rgba(255, 255, 255, 0.7);
+    z-index: 1;
+  }
